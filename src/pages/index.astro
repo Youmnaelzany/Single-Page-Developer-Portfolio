@@ -1,0 +1,25 @@
+---
+import '@/styles/globals.css'
+import Header from '@/components/Header.astro'
+import HeroSection from '@/components/HeroSection.astro'
+import SkillsSection from '@/components/SkillsSection.astro'
+import ProjectsSection from '@/components/ProjectsSection.astro'
+import Footer from '@/components/Footer.astro'
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/images/favicon-32x32.png" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Frontend Mentor | Single-page developer portfolio</title>
+	</head>
+	<body class="mx-40 my-8 bg-Black text-White md:m-8 sm:m-6">
+		<Header />
+		<HeroSection />
+		<SkillsSection />
+		<ProjectsSection />
+		<Footer />
+	</body>
+</html>
