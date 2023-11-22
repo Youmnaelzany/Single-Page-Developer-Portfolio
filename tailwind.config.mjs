@@ -9,20 +9,15 @@ module.exports = {
   ],
   theme: {
     screens: {
-      '2xl': { 'max': '1535px' },
-      // => @media (max-width: 1535px) { ... }
+      'mobile': { 'min': '320px', 'max': '767px' },
+      // => @media (min-width: 576px) { ... }
 
-      'xl': { 'max': '1279px' },
-      // => @media (max-width: 1279px) { ... }
+      'tablet': { 'min': '768px', 'max': '992px' },
+      // => @media (min-width: 960px) { ... }
 
-      'lg': { 'max': '1023px' },
-      // => @media (max-width: 1023px) { ... }
+      'desktop': { 'min': '993px', 'max': '1600px' },
+      // => @media (min-width: 1440px) { ... }
 
-      'md': { 'max': '767px' },
-      // => @media (max-width: 767px) { ... }
-
-      'sm': { 'max': '639px' },
-      // => @media (max-width: 639px) { ... }
     },
     fontSize: {
       sm: '0.8rem',
@@ -30,9 +25,10 @@ module.exports = {
       xl: '1.25rem',
       '2xl': '1.563rem',
       '3xl': ['2rem', '2rem'],
-
-      '4xl': '2.441rem',
+      '4xl': ['2.5rem', '2.5rem'],
       '5xl': '3.052rem',
+      '7xl': ['4.5rem', '4.5rem'],
+      '8xl': ['5rem', '5rem'],
     },
     colors: {
       'Black': ' #151515',
@@ -41,6 +37,16 @@ module.exports = {
       'Grey': ' #D9D9D9',
       'White': ' #FFFFFF',
     },
+    letterSpacing: {
+      tightest: '-0.071rem',
+      tighter: '-0.12781rem',
+      tight: '-0.15625rem',
+      normal: '0',
+      wide: '.025em',
+      wider: '.05em',
+      widest: '.1em',
+      widest: '.25em',
+    }
   },
   plugins: [require("tailwindcss-animate")],
 }
