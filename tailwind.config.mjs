@@ -41,7 +41,7 @@ module.exports = {
       tightest: '-0.071rem',
       tighter: '-0.12781rem',
       tight: '-0.15625rem',
-      normal: '0',
+      normal: '-0.02775rem',
       wide: '.025em',
       wider: '.05em',
       widest: '.1em',
